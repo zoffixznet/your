@@ -1,0 +1,8 @@
+#!/usr/bin/env perl6
+
+multi MAIN('-e', $ where .contains: '$*PERL.compiler.name') {
+    say 'your.your'
+}
+multi MAIN(|, *%) {
+    dd @*ARGS;
+}
